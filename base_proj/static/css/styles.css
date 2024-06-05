@@ -1,3 +1,72 @@
+/* Color Theme Swatches in Hex */
+.Big-Machine-1-hex { color: #BD2A2E; }
+.Big-Machine-2-hex { color: #3B3936; }
+.Big-Machine-3-hex { color: #B2BEBF; }
+.Big-Machine-4-hex { color: #889C9B; }
+.Big-Machine-5-hex { color: #486966; }
+
+
+
+
+
+nav.navbar {
+    padding: 0 1rem;
+}
+
+a.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    display: block;
+    fill: #FFF;
+}
+
+a.navbar-brand.btn.disabled {
+    color: lightgray;
+    border: none;
+}
+
+form input[type="text"],
+form input[type="password"] {
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form#signup-form {
+    margin-top: 2rem;
+    text-align: left;
+    margin: 0 auto;
+    width: 30rem;
+}
+
+form#signup-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+form#signup-form span.helptext {
+    display: block;
+}
+
+form#signup-form span.helptext,
+form#signup-form ul li
+{
+    font-size: .8rem;
+}
+
 ul.errorlist {
     display: none;
+}
+
+div.alert.alert-danger p {
+    margin-bottom: 0;
+    font-size: .8rem;
+    color: rgb(92, 27, 27);
 }

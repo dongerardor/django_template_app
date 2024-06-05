@@ -1,16 +1,16 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <h1>Registro</h1>
-    <form method="post">
+    <h1>Signup</h1>
+    <form method="post" id="signup-form">
         {% csrf_token %}
         {{ form.as_p }}
-        <button type="submit">Registrarse</button>
+        <button class="btn btn-primary" type="submit">Register</button>
     </form>
 
     {% if form.errors %}
     <div class="alert alert-danger my-5">
-        <p>{{form.errors.title.as_text}}</p>
+        <p>{{form.errors.as_text}}</p>
     </div>
     {% endif %}
 

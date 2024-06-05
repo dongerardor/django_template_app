@@ -2,8 +2,13 @@
 
 {% block content %}
 
-<p>Welcome</p>
-<h1>Temp view</h1>
+<h1>Internal page</h1>
 <p>Date: {{ today }}</p>
+
+{% if user.is_authenticated %}
+    <p>Hi
+        <strong>{{ user.username }}</strong>!
+    </p>
+{% endif %}
 
 {% endblock %}

@@ -2,8 +2,12 @@
 
 {% block content %}
 
-<h1>Hello World!</h1>
-<p>This is the home page.</p>
-<p>Date: {{ extra_content }}</p>
+<h1>Home page!</h1>
+<p>Date: {{ today }}</p>
+{% if user.is_authenticated %}
+    <p>Hi
+        <strong>{{ user.username }}</strong>!
+    </p>
+{% endif %}
 
 {% endblock %}
